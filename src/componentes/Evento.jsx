@@ -1,3 +1,5 @@
+import "./Evento.css";
+
 function Evento(props) {
     return (
         <div>

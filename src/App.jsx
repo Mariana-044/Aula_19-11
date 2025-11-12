@@ -4,7 +4,7 @@ import Header from "./componentes/Header";
 import Footer from "./componentes/Footer";
 import Home from "./paginas/Home";
 import Sobre from "./paginas/Sobre";
-
+import "./style.css";
 
 function App() {
   return (

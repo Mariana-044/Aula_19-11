@@ -1,4 +1,5 @@
 import Evento from "../componentes/Evento";
+import "./Home.css";
 
 function Home() {
   return (

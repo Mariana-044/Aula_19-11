@@ -1,3 +1,5 @@
+import "./Footer.css";
+
 function Footer () {
     const ano = new Date().getFullYear(); //Função para a data
 

@@ -1,0 +1,59 @@
+main {
+    font-family: "Comic Sans MS", "Courier New", cursive;
+    text-align: center;
+    padding: 3rem;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png'),
+                linear-gradient(to bottom right, #ff00cc, #3333ff);
+    border-radius: 20px;
+    box-shadow: 0 0 25px #ff00cc, 0 0 15px #00ffff inset;
+    backdrop-filter: blur(8px);
+    border: 2px dashed #ffccff;
+    animation: pulseSobre 3s infinite alternate;
+  }
+  
+  main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px #000, 0 0 10px #ff00ff;
+    background: linear-gradient(to right, #ffccff, #ccffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  main p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: #ffccff;
+    text-shadow: 1px 1px 2px #000;
+    font-style: italic;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Animação */
+  @keyframes pulseSobre {
+    from {
+      box-shadow: 0 0 15px #ff00ff, 0 0 10px #00ffff inset;
+    }
+    to {
+      box-shadow: 0 0 30px #ff00ff, 0 0 20px #00ffff inset;
+    }
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    main {
+      padding: 2rem;
+      border-radius: 12px;
+    }
+  
+    main h1 {
+      font-size: 2rem;
+    }
+  
+    main p {
+      font-size: 1.1rem;
+    }
+  }
+  

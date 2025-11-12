@@ -1,3 +1,4 @@
+import "./Sobre.css";
 function Sobre() {
   return (
     <main>
