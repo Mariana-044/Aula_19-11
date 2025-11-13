@@ -1,79 +1,31 @@
-main {
-    font-family: "Comic Sans MS", "Courier New", cursive;
-    text-align: center;
-    padding: 3rem;
-    background: url('https://www.transparenttextures.com/patterns/stardust.png'),
-                linear-gradient(to bottom right, #ff00cc, #3333ff);
-    border-radius: 20px;
-    box-shadow: 0 0 25px #ff00cc, 0 0 15px #00ffff inset;
-    backdrop-filter: blur(8px);
-    border: 2px dashed #ffccff;
-    animation: pulseGlow 3s infinite alternate;
-  }
-  
-  main h1 {
-    font-size: 3rem;
-    margin-bottom: 1.2rem;
-    text-shadow: 2px 2px 4px #000, 0 0 10px #ff00ff;
-    background: linear-gradient(to right, #ffccff, #ccffff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  main p {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
-    color: #ffccff;
-    text-shadow: 1px 1px 2px #000;
-    font-style: italic;
-  }
-  
-  /* Botões dentro do Home */
-  button {
-    background: linear-gradient(to bottom, #ff66cc, #6600cc);
-    border: 2px dotted #fff;
-    border-radius: 15px;
-    padding: 1rem 2rem;
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    box-shadow: 0 0 10px #ff00ff, 0 0 5px #00ffff inset;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  button:hover {
-    transform: scale(1.1) rotate(-2deg);
-    background: linear-gradient(to bottom, #ff99ff, #9966ff);
-  }
-  
-  /* Animação pulsante */
-  @keyframes pulseGlow {
-    from {
-      box-shadow: 0 0 15px #ff00ff, 0 0 10px #00ffff inset;
-    }
-    to {
-      box-shadow: 0 0 30px #ff00ff, 0 0 20px #00ffff inset;
-    }
-  }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    main {
-      padding: 2rem;
-      border-radius: 12px;
-    }
-  
-    main h1 {
-      font-size: 2.2rem;
-    }
-  
-    main p {
-      font-size: 1.1rem;
-    }
-  
-    button {
-      padding: 0.8rem 1.5rem;
-    }
-  }
-  
+/* ===============================
+   ESTILOS DO COMPONENTE HOME
+   =============================== */
+
+/* Container principal da página inicial */
+.pagina-inicio {
+  margin-top: 30px;
+  width: 90%;
+  max-width: 900px;
+  text-align: center;
+}
+
+/* Título de boas-vindas */
+.pagina-inicio h1 {
+  color: #005b96;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+/* Parágrafo de introdução */
+.pagina-inicio p {
+  color: #444;
+  line-height: 1.5;
+  font-size: 1em;
+  background-color: transparent; /* Remove fundo azul herdado */
+  padding: 0;
+  position: static;
+  width: auto;
+  bottom: auto;
+  letter-spacing: normal;
+}

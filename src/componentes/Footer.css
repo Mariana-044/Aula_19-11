@@ -1,15 +1,23 @@
+/* ===============================
+   ESTILOS DO COMPONENTE FOOTER
+   =============================== */
+
+/* Rodapé fixo */
 footer {
-    text-align: center;
-    padding: 1rem;
-    background: linear-gradient(to right, #6600cc, #ff66cc);
-    border-top: 2px dashed #ffccff;
-    box-shadow: 0 0 10px #ff00ff inset;
-  }
-  
-  footer p {
-    font-size: 1rem;
-    color: #fff;
-    font-style: italic;
-    text-shadow: 1px 1px 2px #000;
-  }
-  
+  background-color: #0072bb; /* Azul padrão SENAI */
+  color: white;
+  padding: 10px;
+  position: fixed;            /* Corrige a posição para fixar no rodapé */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+}
+
+/* Parágrafo dentro do rodapé */
+footer p {
+  margin: 0;
+}

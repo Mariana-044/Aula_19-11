@@ -1,34 +1,39 @@
+/* ===============================
+   ESTILOS DO COMPONENTE HEADER
+   =============================== */
+
+/* Cabeçalho principal */
 header {
-    text-align: center;
-    padding: 1.5rem;
-    background: linear-gradient(to right, #ff00cc, #3333ff);
-    border-bottom: 2px dashed #ffccff;
-    box-shadow: 0 0 15px #ff00ff;
-  }
-  
-  header h2 {
-    font-family: "Comic Sans MS", "Courier New", cursive;
-    font-size: 2rem;
-    color: #fff;
-    text-shadow: 2px 2px 4px #000, 0 0 8px #00ffff;
-  }
-  
-  nav {
-    margin-top: 1rem;
-  }
-  
-  nav a {
-    color: #ffccff;
-    font-weight: bold;
-    text-decoration: none;
-    margin: 0 0.5rem;
-    transition: color 0.3s ease;
-  }
-  
-  nav a:hover {
-    color: #00ffff;
-    text-shadow: 0 0 6px #ff00ff;
-  }
-  
-  
-  
+  width: 100%;
+  background-color: #0072bb; /* Azul padrão SENAI */
+  color: white;
+  padding: 20px 0;
+  font-size: 1.6em;
+  font-weight: bold;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Título dentro do cabeçalho */
+header h2 {
+  margin: 0;
+  font-size: 1.6em;
+}
+
+/* Menu de navegação no cabeçalho */
+header nav {
+  margin-top: 10px;
+}
+
+/* Links do menu */
+header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+/* Efeito hover nos links */
+header nav a:hover {
+  text-decoration: underline;
+}

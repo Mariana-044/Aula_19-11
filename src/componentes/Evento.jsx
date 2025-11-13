@@ -1,4 +1,4 @@
-import "./Evento.css";
+import "./evento.css";
 
 function Evento(props) {
     return (

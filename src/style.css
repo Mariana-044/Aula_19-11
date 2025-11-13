@@ -1,92 +1,135 @@
-/* Estilo Scenecore para o App */
-.App {
-    font-family: "Comic Sans MS", "Courier New", cursive;
-    text-align: center;
-    background: url('https://www.transparenttextures.com/patterns/stardust.png'), linear-gradient(to bottom right, #ff00cc, #3333ff);
-    color: #fff;
-    padding: 3rem;
-    border-radius: 20px;
-    box-shadow: 0 0 25px #ff00cc, 0 0 15px #00ffff inset;
-    backdrop-filter: blur(8px);
-    border: 2px dashed #ffccff;
-    transition: all 0.4s ease-in-out;
-    animation: pulseGlow 3s infinite alternate;
+/* ===============================
+   ESTILOS GERAIS DO PROJETO
+   =============================== */
+
+
+  
+  /* Define as cores, fonte e alinhamento geral */
+  body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa; /* Fundo cinza-claro */
+    color: #333;               /* Cor principal do texto */
+    text-align: center;        /* Centraliza textos genéricos */
+    min-height: 100vh;    
+    margin: 0;              /* Remove margens padrão do navegador */
+    padding: 0;             /* Remove espaçamentos padrão */
+    box-sizing: border-box;    /* Garante altura mínima de tela cheia */
+    font-size: 12px;
   }
   
+  /* Container principal da aplicação */
+  .app {
+    display: flex;             /* Usa flexbox para organização vertical */
+    flex-direction: column;    /* Elementos empilhados (de cima para baixo) */
+    align-items: center;       /* Centraliza os itens na horizontal */
+    padding-bottom: 80px;      /* Espaço reservado para o rodapé fixo */
+  }
   
-  /* Título principal */
+  /* ===============================
+     CABEÇALHO (HEADER)
+     =============================== */
+  
+  header {
+    width: 100%;                        /* Ocupa toda a largura */
+    background-color: #0072bb;          /* Azul padrão SENAI */
+    color: white;                       /* Texto branco */
+    padding: 20px 0;                    /* Espaçamento interno */
+    font-size: 1.6em;                   /* Tamanho de texto maior */
+    font-weight: bold;                  /* Texto em negrito */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Sombra abaixo do cabeçalho */
+  }
+  
+  /* Estilo do menu principal de navegação */
+  .menu-principal {
+    margin-top: 10px;
+  }
+  
+  .menu-principal a {
+    color: #005b96;           /* Azul escuro para links */
+    text-decoration: none;    /* Remove o sublinhado */
+    margin: 0 10px;           /* Espaçamento lateral */
+    font-weight: 500;         /* Leve destaque */
+  }
+  
+  .menu-principal a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+  }
+  
+  /* ===============================
+     CONTEÚDO PRINCIPAL
+     =============================== */
+  
+  main {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 900px;
+  }
+  
+  /* Título principal das páginas */
   h1 {
-    font-size: 3rem;
-    margin-bottom: 1.2rem;
-    text-shadow: 2px 2px 4px #000, 0 0 10px #ff00ff;
-    background: linear-gradient(to right, #ffccff, #ccffff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #005b96;
+    margin-bottom: 20px;
   }
   
-  
-  /* Parágrafo */
+  /* Parágrafos genéricos */
   p {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
-    color: #ffccff;
-    text-shadow: 1px 1px 2px #000;
-    font-style: italic;
+    color: #444;
+    line-height: 1.5; /* Espaçamento entre linhas */
   }
   
+  /* ===============================
+     BOTÕES
+     =============================== */
   
-  /* Botões */
-  button {
-    background: linear-gradient(to bottom, #ff66cc, #6600cc);
-    border: 2px dotted #fff;
-    border-radius: 15px;
-    padding: 1rem 2rem;
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    box-shadow: 0 0 10px #ff00ff, 0 0 5px #00ffff inset;
+  button,
+  .btn {
+    background-color: #0072bb;       /* Azul padrão */
+    color: white;                    /* Texto branco */
+    border: none;                    /* Remove bordas padrão */
+    padding: 10px 20px;              /* Espaçamento interno */
+    border-radius: 6px;              /* Cantos arredondados */
+    margin: 5px;                     /* Espaçamento entre botões */
+    cursor: pointer;                 /* Mãozinha ao passar o mouse */
+    font-size: 1em;                  /* Tamanho padrão */
+    transition: background-color 0.3s ease; /* Transição suave no hover */
+  }
+  
+  button:hover,
+  .btn:hover {
+    background-color: #005b96;       /* Azul mais escuro ao passar o mouse */
+  }
+  
+  /* ===============================
+     CARDS DE EVENTOS
+     =============================== */
+  
+  evento {
+    background-color: white;               /* Fundo branco */
+    border-radius: 10px;                   /* Cantos arredondados */
+    padding: 20px;
+  }
+
+  footer, p {
+    background-color: #0072bb;
+    color:white;
+    padding: 10px;
+    position: fixed;
+    width:100%;
+    bottom: 0;
+    letter-spacing: 0.5px;
+  }
+
+  .nav-centralizada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaço entre os botões */
+    margin: 40px 0;
+  }
+  
+  .nav-centralizada button {
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  
-  button:hover {
-    transform: scale(1.1) rotate(-2deg);
-    background: linear-gradient(to bottom, #ff99ff, #9966ff);
-  }
-  
-  
-  /* Animação pulsante */
-  @keyframes pulseGlow {
-    from {
-      box-shadow: 0 0 15px #ff00ff, 0 0 10px #00ffff inset;
-    }
-    to {
-      box-shadow: 0 0 30px #ff00ff, 0 0 20px #00ffff inset;
-    }
-  }
-  
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .App {
-      padding: 2rem;
-      border-radius: 12px;
-    }
-  
-  
-    h1 {
-      font-size: 2.2rem;
-    }
-  
-  
-    p {
-      font-size: 1.1rem;
-    }
-  
-  
-    button {
-      padding: 0.8rem 1.5rem;
-    }
   }
   
