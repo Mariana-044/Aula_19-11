@@ -6,7 +6,7 @@ function Footer () {
 
     return (
         <footer>
-            <p> Meu Site em React - Técnico em Desenvolvimento de Sistemas. {ano} </p>
+            <p> Meu site em React - Técnico em Desenvolvimento de Sistemas - {ano} </p>
             </footer>
     ) //Fecha retorno
 } //Fecha Função
