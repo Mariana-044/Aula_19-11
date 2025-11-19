@@ -22,7 +22,7 @@
   color: #444;
   line-height: 1.5;
   font-size: 1em;
-  background-color: transparent; /* Remove fundo azul herdado */
+  background-color: transparent; 
   padding: 0;
   position: static;
   width: auto;

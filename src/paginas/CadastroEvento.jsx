@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { TextField, Container, Button, List, ListItem } from "@mui/material";
+import { useNavigate } from "react-router-dom"; // import para navegação
 import "./cadastroEvento.css";
 
 function CadastroEvento() {
@@ -10,7 +11,9 @@ function CadastroEvento() {
     descricao: ""
   });
 
-  const [eventos, setEventos] = useState([]); // lista de eventos cadastrados
+  const [eventos, setEventos] = useState([]);
+
+  const navigate = useNavigate(); // hook para navegação
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,8 +22,8 @@ function CadastroEvento() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setEventos([...eventos, evento]); // adiciona evento na lista
-    setEvento({ nome: "", data: "", local: "", descricao: "" }); // limpa formulário
+    setEventos([...eventos, evento]);
+    setEvento({ nome: "", data: "", local: "", descricao: "" });
   };
 
   return (
@@ -71,7 +74,22 @@ function CadastroEvento() {
         </Button>
       </form>
 
-      {/* Lista de eventos cadastrados */}
+      {/* Botão de voltar ao Home */}
+      <Button
+        variant="contained"
+        onClick={() => navigate("/")}
+        sx={{
+          color: "white",              // texto branco
+          backgroundColor: "#1976d2",  // azul padrão MUI
+          mt: 2,                       // margem superior
+          "&:hover": {
+            backgroundColor: "#115293" // cor no hover
+          }
+        }}
+      >
+        Voltar ao Home
+      </Button>
+
       <h3>Eventos cadastrados:</h3>
       <List>
         {eventos.map((ev, index) => (
